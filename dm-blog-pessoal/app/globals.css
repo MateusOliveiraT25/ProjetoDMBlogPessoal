@@ -1,12 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --button-bg: #d1d1d1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --button-bg: #d1d1d1;
   }
 }
 
@@ -18,10 +20,20 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffa500; /* Fundo laranja */
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--foreground);
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 * {
