@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import styles from './stylepadd.css'; // Importe o CSS
+
+
 
 export default function AddPostPage() {
   const [titulo, setTitulo] = useState("");
